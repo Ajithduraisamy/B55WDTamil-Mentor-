@@ -1,0 +1,36 @@
+changing from one data type to another...(Type casting)....
+I need to convert strings to integer...
+2 steps:
+a. parseInt();
+b. +();
+
+parseInt: is used to convert strings to integer..
+variable:var, let and const..
+Strings: strings are used as it is ...
+Array:
+// Comment
+// the purpose is to understand what is the code is doing
+
+//Inbuilt methods:
+// split();
+// it is used to convert string to character array..
+var str = "1 2 3 4".split(" ");
+console.log(str);
+var res = str.map(Number);
+console.log(res);
+
+// Comment
+// the purpose is to understand what is the code is doing
+
+//Inbuilt methods:
+// split();
+// it is used to convert string to character array..
+var str = "1 2 3 4".split(" ");
+console.log(str);
+var res = str.map(Number);
+console.log(res);
+
+// Chaining of Methods...
+var arr = "1 2 3 4".split(" ").map(Number);
+console.log(arr);
+[1,2,3,4]
