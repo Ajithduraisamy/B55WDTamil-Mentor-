@@ -1,0 +1,23 @@
+Read The array from the keyword, and print only the even num
+mbers from the array
+
+Input: 1 2 3 4 5
+output:2 4
+// 5 steps
+// Step 1: convert input string to numbers array
+// step 3: Apply for loop for the array
+// Step 2: Take a Temprorpy array
+// Step 4: push the even numbers into the temproray array
+// Step 5: Apply Join Method
+var arr = "1 2 3 4".split(" ").map(Number);
+// Step 2: Take a Temprorpy array
+var temp = []
+// step 3: Apply for loop for the array
+for(var i =0;i<arr.length;i++){
+if(arr[i]%2==0){
+// Step 4: push the even numbers into the temproray arr
+temp.push(arr[i]);
+}
+}
+// Step 5: Apply Join Method
+console.log(temp.join(" "));
