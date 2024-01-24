@@ -26,3 +26,14 @@ console.log(Obj1["attendance"][3]);
 for(var i in Obj1){
 console.log(i,Obj1[i]);
 }
+
+var Obj1 = {
+ stu1:{name:"john doe",age:23,year:2018,attendance:[13,14,15,26]}
+ }
+//How to print, if in case of nested Objects...
+//Store in a variable
+var res = Obj1.stu1
+//step2:Apply for in loop
+for(var i in res){
+  console.log(res[i]);
+}
