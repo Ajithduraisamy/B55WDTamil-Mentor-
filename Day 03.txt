@@ -1,0 +1,16 @@
+// What is JSON??
+//How it has been Evolved?
+//JSON: Javascript Object Notation
+
+//This is Object
+var obj = {
+  name:"john doe",                    
+  age:23
+}
+// This is Json
+var obj1 = {
+  "name":"mary doe",
+  "age":23
+}
+//here key will be in double quotes.
+console.log(obj1.name);
