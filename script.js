@@ -19,4 +19,7 @@ request.onload = function(){
 var res = JSON.parse(request.response);
 console.log(res);
 // Print all 250 country common name in console
+  for(var i =0;i<res.length;i++){
+    console.log(res[i].name.common)
+}
 }
