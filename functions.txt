@@ -77,3 +77,20 @@ obj[arr[i]] = "odd"
 return obj;
 }
 console.log(foo([12,13,14,15]));
+
+// functions for even as well as odd
+// write a function which will print only the even numbers
+var even = [];
+var odd = [];
+function foo(arr){
+for(var i=0;i<arr.length;i++){
+if(arr[i]%2 == 0){
+even.push(arr[i]);
+}
+else{
+odd.push(arr[i]);
+}
+}
+return odd;
+}
+console.log(foo([12,13,14,15]));
