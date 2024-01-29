@@ -94,3 +94,23 @@ odd.push(arr[i]);
 return odd;
 }
 console.log(foo([12,13,14,15]));
+
+
+// generic,anonymous,arrow functions as well as IIFE
+// Anonymous function syntax:
+//var variablename = function(){}
+// here the function result is stored in a variable.
+var obj = {}
+var res = function(arr){
+for(var i=0;i<arr.length;i++){
+if(arr[i]%2 == 0){
+obj[arr[i]] = "even"
+}
+else{
+obj[arr[i]] = "odd"
+}
+}
+return obj;
+}
+var result = res([12,13]);
+console.log(result);
