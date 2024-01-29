@@ -40,3 +40,24 @@ foo(12,13);
 // it expects the return keyword..
 // every function should have only one return keyword..
 //only one value can be obtained from the function..
+
+
+// For Array
+function foo(arr){
+  for(var i = 0;i<arr.length;i++){
+  console.log(arr[i]);
+  }
+}
+console.log(foo([12,13,14,15]));
+
+// For Objects:
+var obj = {
+  name:"john doe",
+  age:23
+}
+function bar(obj){
+for(var i in obj){
+console.log(obj[i]);
+}
+}
+console.log(bar(obj));
