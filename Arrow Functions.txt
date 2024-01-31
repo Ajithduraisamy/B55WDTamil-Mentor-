@@ -42,3 +42,34 @@ if (n == undefined)
 return arr.slice(-n)
 }
 console.log(foo([7,9,0,2,20,65,47,85,95,4],10));
+
+
+Print the Below Pattern
+ * 
+ * *
+ * * *
+ * * * *
+* * * *
+* * *
+* *
+*
+
+var rows = 4;
+// this is for number of rows
+for(var i=0;i<rows;i++){
+var stars = i+1;
+var temp = " "
+for(var j=0;j<stars;j++){
+temp=temp+"*"+" "
+}
+console.log(temp.trim(" "));
+}
+// second half of the pattern
+for(var i=0;i<rows;i++){
+var stars = rows-i;
+var temp = " "
+for(var j=0;j<stars;j++){
+temp=temp+"*"+" "
+}
+console.log(temp.trim(" "));
+}
