@@ -1,0 +1,29 @@
+// Arrow functions as well as IIFE
+// Arrow Functions -> ES6
+// Syntax: var variablename = (function parameters)=>{}
+// the main purpose is to reduce the code length
+function foo(){
+  return "hello world"
+}
+//Above function can be written in arrow function 
+var res = ()=>"hello world"
+console.log(foo());
+console.log(res());
+// Arrow function has a special case
+// if a function has a single statement,
+// ex: a+b,,a-b,a*b,a/b
+// there is no need of return keyword...
+
+var add = (a,b)=>a+b;
+console.log(add(12,12));
+// second case
+function bar(){
+console.log("Hello world");
+return "this is result"
+}
+// if a function has / if a function has the multiple lines
+// then you need to add  the return keyword...
+var result = ()=>{
+console.log("Hello world");
+return "this is result"
+}
