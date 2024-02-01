@@ -63,3 +63,35 @@ console.log(bar(12,13,14,15,16,17));
  console.log(foo(12,13))
  console.log(foo(121,131))
  console.log(foo(12111,13111,1441,1551))
+
+
+
+5.Write a JavaScript function to find the most frequent item of an array.
+Sample array: 
+var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+Sample Output: q 
+
+
+ var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+// Sample Output: q 
+// Objects
+var obj = {}
+var min_occ = 1
+var max_ele;
+function foo(arr){
+  for(var i =0;i<arr.length;i++){
+  var ele = arr[i];
+  if(obj[ele]){
+  obj[ele]++;
+  }
+  else{
+  obj[ele]=1
+  }
+  if(obj[ele]>min_occ){
+  min_occ = obj[ele]
+  max_ele = ele
+  }
+}
+return max_ele;
+}
+console.log(foo(arr1))
