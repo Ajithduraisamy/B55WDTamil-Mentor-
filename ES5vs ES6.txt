@@ -1,0 +1,8 @@
+// ES5 vs ES6
+var a = 32
+var b = 33
+console.log("The value of a and b is"+(a+b)+"adding here");
+//Syntax: console.log(`${expression}`)
+console.log(`The value of a and b is ${a+b} adding here`);
+//The main purpose of using the template
+//literals is to make the output statement much effective
