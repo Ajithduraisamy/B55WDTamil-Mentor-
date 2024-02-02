@@ -56,3 +56,27 @@ console.log(c2);
 //this is a keyword.
 // it is a temproray reference to freshly created Objects...
 
+
+class Bike
+{
+  constructor(name,color,mileage,speed){
+  this.name = name
+  this.color = color
+  this.mileage =  mileage
+  this.speed=speed
+  }
+  // Method
+  print_name(){
+  return `The name of the Bike is ${this.name}`
+  }
+
+}
+
+var b1 = new Bike("FZ","blue",32,"50km/h");
+var b2 = new Bike("KTM","blue",12,"40km/h");
+//Syntax:objectname.methodname())
+console.log(b1.print_name());
+console.log(b2.print_name());
+// if you write a function inside the class then,
+// it is called as method..
+
