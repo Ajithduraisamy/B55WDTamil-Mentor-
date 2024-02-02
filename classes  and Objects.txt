@@ -80,3 +80,27 @@ console.log(b2.print_name());
 // if you write a function inside the class then,
 // it is called as method..
 
+
+// for-loop: it's a fixed iteration (both fwd and bwk)
+// for-in: it's applicable for Objects(K:V)
+// for-off: it is applicable for the array
+// for-each: it is applicable gfor array
+
+// For-of, For-each
+// for ...of: this is applicable only to Arrays.. strings...
+var arr = [12,13,134]
+// Syntax:for(var variable of array){}
+// here i represents the array elements..
+for(var i of arr){
+console.log(i);
+}
+
+// for-each:
+// it takes function as a parameter 
+// apply on each and every element of the array
+// return undefined..
+
+// The main Purpose is Printing...
+
+//Syntax:arrayname.forEach(()=>{})
+arr.forEach((ele)=>console.log(ele))
