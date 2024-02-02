@@ -17,5 +17,42 @@
 
 //classes and objects...
 
+// Prototype...
+// class: it is the collection/blueprint of properties, Objects...etc..
+//Object: An Object is a real time entity...
 
+// Syntax:
+// class classname{
+// }
+// var objectname = new classname();
+
+// Ex:
+class Car
+{
+  constructor(name,color){
+  this.name = name
+  this.color = color
+  }
+  
+
+}
+// specifically it belongs to class of type car..
+var c1 = new Car("BMW","black");
+console.log(c1);
+var c2 = new Car("Audi",{color:"pale"},"petrol");
+console.log(c2);
+c2.color = "red"
+console.log(c2);
+// new is a keyword
+// it will helps u to create  the fresh Objects...
+
+//constructor: it is the way to assign the values to Objects..
+// here name and color is the constructor parameter...
+
+
+//Syntax: constructor(){}
+
+
+//this is a keyword.
+// it is a temproray reference to freshly created Objects...
 
