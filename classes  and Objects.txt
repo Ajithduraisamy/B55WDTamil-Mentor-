@@ -1,0 +1,21 @@
+// Classes and Objects...
+// var let and const
+// Hoisitng
+
+// Main 4 pillars
+// Encapsulation
+//inheritance
+//polymorphism
+//Abstraction.
+
+
+// Encapsulation: protecting 
+// Inheritance:copying the properties from the parent...
+//Polymorphism:
+//Abstraction: Hiding the Implementation details from the user...
+
+
+//classes and objects...
+
+
+
