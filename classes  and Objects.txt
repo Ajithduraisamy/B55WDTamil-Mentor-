@@ -104,3 +104,17 @@ console.log(i);
 
 //Syntax:arrayname.forEach(()=>{})
 arr.forEach((ele)=>console.log(ele))
+
+
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false,
+};
+
+console.log(Object.keys(object1));
+// Expected output: Array ["a", "b", "c"]
+for(var key of Object.keys(object1)){
+  console.log(`values:${object1[key]}`)
+}
+Object.values(object1).forEach((ele)=>console.log(ele))
