@@ -27,3 +27,27 @@ var str = ["go","come","play"]
 // var res = ["gos","comes","plays"]
 var res = str.map((ele)=>ele+"s");
 console.log(res);
+
+
+// Map ,reduce and filter..
+// Problems...
+//(MRF) methods..
+// This is applicable only to arrays..
+var arr = [12,13,14,15,16,17];
+// below is the resultant array
+// var res = [12,14,16];
+// step 01: for loop
+// step 02: take each element and apply condition(if condition)
+// step 03: take a temp array
+// step 04: if the condition is satisified, push the ele to temp array
+// step 05: if the condition failed it has to be ignored...
+// step 06: print the resultant array
+
+// Filter:
+// it is applicable to the functions
+// it takes function as a parameter
+// inside the function we have the condition
+// if the condition is satisifed then it will be pushed to resultant array
+// Syntax: var variablename = arrayname.filter(()=>{})
+var res = arr.filter((ele)=>ele%2===0)
+console.log(res);
