@@ -1,0 +1,29 @@
+// Map ,reduce and filter..
+// Problems...
+//(MRF) methods..
+// This is applicable only to arrays..
+var arr = [12,13,14,15,16,17];
+// below is the resultant array
+// var res = [24,26,28,30,32,34];
+// step 01: for loop
+// step 02: take a temp array
+// step 03: multiply each element by 2
+// step 04: push the result to the temp array
+// step 05: print the temp array
+
+//map:
+//map takes function as a parameter
+// apply on each and every element of the array
+// returns the new array
+// Syntax: var reultantarrayname = arrayname.map(()=>{});
+// ele represents array elements and it is user defined...
+//main purpose: if u need a result in terms of array
+
+//var res = arr.map((ele)=>ele*2);
+// console.log(res);
+
+
+var str = ["go","come","play"]
+// var res = ["gos","comes","plays"]
+var res = str.map((ele)=>ele+"s");
+console.log(res);
