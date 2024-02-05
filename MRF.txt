@@ -51,3 +51,26 @@ var arr = [12,13,14,15,16,17];
 // Syntax: var variablename = arrayname.filter(()=>{})
 var res = arr.filter((ele)=>ele%2===0)
 console.log(res);
+
+
+var request =  new XMLHttpRequest();
+request.open("GET","https://raw.githubusercontent.com/rvsp/restcountries-json-data/master/res-countries.json")
+request.send();
+request.onload = function(){
+var res = JSON.parse(request.response);
+console.log(res);
+
+// 1.print  only those  countries name which belongs to asia region
+
+// var result_asia = res.filter((ele)=>ele.region == "Asia");
+// console.log(result_asia)
+// var country_names = result_asia.map((ele)=>ele.name);
+// console.log(country_names);
+
+// 2. Print capitals of those countires whose population is less than 2Lakhs
+
+var popu = res.filter((ele)=>ele.population<200000);
+console.log(popu);
+var popu_res = popu.map((ele)=>ele.capital)
+console.log(popu_res);
+}
